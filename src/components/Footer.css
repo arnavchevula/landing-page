@@ -1,0 +1,17 @@
+.Footer__Wrapper {
+  color: #ffffff;
+  margin-top: auto;
+}
+.Social__List {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  line-height: 2.5;
+}
+.Icon__Footer {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 50%;
+  display: flex;
+}

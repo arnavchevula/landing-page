@@ -1,0 +1,67 @@
+.App__Wrapper {
+  background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent 10rem),
+    url(../backgroundLarge.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  min-height: 100vh;
+  @media (max-width: 576px) {
+    background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent),
+      url(../backgroundLarge.jpg);
+    background-position: center, bottom left;
+    background-size: cover, cover;
+    align-items: flex-start;
+    padding-top: 7.5rem;
+    height: 75vh;
+    max-height: 720px;
+  }
+}
+
+.Header__Wrapper {
+  color: #fafafc;
+  position: relative;
+  top: 30vh;
+}
+.btn-margin-top {
+  margin-top: 1rem;
+}
+
+.heroInner {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+span {
+  max-width: 50%;
+}
+h1 {
+  font-weight: 900;
+  font-size: clamp(2rem, 5.5vw, 3.25rem);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.heroHeading {
+  box-shadow: 0 0.5rem 1.5rem -0.5rem currentColor;
+  border-radius: 0.66rem;
+  border: 1px solid gray;
+  padding: 20px;
+  min-height: 100px;
+  display: inline-block;
+}
+
+h2 > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid gray;
+  border-radius: 0.66rem;
+  margin-top: 5%;
+  width: fit-content;
+  padding: 10px;
+}
+.Icon {
+  line-height: 20px;
+  margin-right: 10px;
+}

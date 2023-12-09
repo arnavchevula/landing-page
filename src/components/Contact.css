@@ -1,0 +1,12 @@
+.ContactPage__Wrapper {
+  background: linear-gradient(to bottom, #0a0c2c80 3rem, transparent 10rem),
+    url(../vegas.jpg);
+  background-position: center;
+  /* background-position: 50% 70%; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}

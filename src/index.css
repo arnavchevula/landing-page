@@ -1,13 +1,75 @@
-body {
+/* body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+} */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 1rem;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.btn {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  background: #fafafc;
+  background: linear-gradient(to bottom right, gray, transparent);
+  border: 1px solid gray;
+  border-radius: 0.66rem;
+  transition: all 0.2s;
+  box-shadow: 0 0.5rem 1.5rem -0.5rem currentColor;
+}
+
+.btn:hover,
+.btn:focus {
+  box-shadow: 0 0 0 2px #2e2e48, 0 0 0 4px #fafafc;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(Montserrat-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(OpenSans-VariableFont_wdth.ttf);
 }

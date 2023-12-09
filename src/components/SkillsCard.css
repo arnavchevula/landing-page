@@ -1,0 +1,33 @@
+/* .Skills__Container {
+  color: white;
+  border-radius: 0.66rem;
+  padding: 10px;
+  min-width: 92%;
+}
+.Card__Title {
+  font-weight: 500;
+  font-size: larger;
+  margin-bottom: 5px;
+  letter-spacing: 3px;
+  color: #00b4d8;
+}
+.Card__Element {
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Progress__Bar {
+  background-color: white;
+  height: 10px;
+  margin-left: 2px;
+  display: inline-block;
+  width: 50%;
+  border-radius: 0.66rem;
+}
+.ProgressBar__Inner {
+  width: 90%;
+  background-color: black;
+  border-radius: 0.66rem;
+  height: 10px;
+} */
