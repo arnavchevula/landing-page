@@ -1,11 +1,29 @@
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { BsPerson } from "react-icons/bs";
+import { FaSquareTwitter } from "react-icons/fa6";
+import { BiLogoGithub } from "react-icons/bi";
+import { FaLinkedin } from "react-icons/fa";
 
 import Nav from "./Nav";
 import "./Header.css";
+const icons = [
+  {
+    icon: <FaSquareTwitter style={{ transform: "none" }} />,
+    url: "https://twitter.com"
+  },
+  {
+    icon: <FaLinkedin style={{ transform: "none" }} />,
+    url: "https://www.linkedin.com/in/arnav-chevula-1a1386b0/"
+  },
+  {
+    icon: <BiLogoGithub style={{ transform: "none" }} />,
+    url: "https://github.com/arnavchevula"
+  }
+];
 const apiKey = "LmBLnyCMzGz3cMfy391Zyg==Rzqx5XZSSFHOuozQ";
 const Header = () => {
+  const navigate = useNavigate();
   const [quote, setQuote] = useState([]);
   const getQuote = () => {
     return axios
@@ -18,6 +36,10 @@ const Header = () => {
       });
   };
 
+  const handleResume = () => {
+    navigate("/about");
+  };
+
   useEffect(() => {
     getQuote();
   }, []);
@@ -26,27 +48,35 @@ const Header = () => {
     <div className={"App__Wrapper"}>
       <Nav />
       <section className="Header__Wrapper">
-        <div className="heroInner">
-          <span style={{ border: "none" }}>
-            <div>
-              <h2 className={"heroHeading"}>
-                {quote.quote}
-                <div>
-                  <span className="Icon" style={{ border: "none" }}>
-                    <BsPerson />
-                  </span>
-                  <h6>{quote.author}</h6>
-                </div>
-              </h2>
-            </div>
-            <a
-              href="#"
-              className="btn btn-light btn-margin-top"
-              onClick={getQuote}
-            >
-              new quote?
-            </a>
-          </span>
+        <div className="Hero__Statement">
+          {/* <p>Hello, I am</p> */}
+          <h2 style={{ fontSize: "xxx-large" }}>Arnav Chevula</h2>
+          <p className={"Hero__Text"}>
+            I'm a Full-Stack Engineer currently looking for my next gig! I have
+            4+ years in the industry developing web applications. Dedicated to
+            transforming ideas into elegant, efficient, and scalable solutions.
+            My mission is to create impactful well designed technology for the
+            modern world.
+          </p>
+          <ul className="Button__List">
+            {icons.map((icon, index) => {
+              return (
+                <li className="Icon__Wrapper">
+                  <a
+                    className="Icon"
+                    href={icon.url}
+                    key={index}
+                    target="_blank"
+                  >
+                    {icon.icon}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <button className="button-28" onClick={handleResume}>
+            Resume
+          </button>
         </div>
       </section>
     </div>

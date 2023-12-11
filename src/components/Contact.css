@@ -10,3 +10,6 @@
   display: flex;
   flex-direction: column;
 }
+.Contact__Form {
+  color: white;
+}

@@ -72,7 +72,7 @@ const Resume = () => {
 
       <div className="RightTab__Container">
         <div className="Mission__Container">
-          <h2>ABOUT ME</h2>
+          <h2 className="Label__Text">ABOUT ME</h2>
           <div className="Mission__Statement">
             <p>
               Customer-focused engineer passionate about crafting scalable &
@@ -89,7 +89,7 @@ const Resume = () => {
           </div>
         </div>
         <div className="Experience__Container">
-          <h2>EXPERIENCE</h2>
+          <h2 className="Label__Text">EXPERIENCE</h2>
           <div className="Card__Containers">
             <div className="Experience">
               <div className="Experience__Left">
