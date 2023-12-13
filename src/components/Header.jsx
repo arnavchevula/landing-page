@@ -50,13 +50,15 @@ const Header = () => {
       <section className="Header__Wrapper">
         <div className="Hero__Statement">
           {/* <p>Hello, I am</p> */}
-          <h2 style={{ fontSize: "xxx-large" }}>Arnav Chevula</h2>
+          <h2 className="typewriter" style={{ fontSize: "xxx-large" }}>
+            hello I am Arnav Chevula
+          </h2>
           <p className={"Hero__Text"}>
-            I'm a Full-Stack Engineer currently looking for my next gig! I have
-            4+ years in the industry developing web applications. Dedicated to
-            transforming ideas into elegant, efficient, and scalable solutions.
-            My mission is to create impactful well designed technology for the
-            modern world.
+            I'm a <span style={{ color: "#ff8f00" }}>Full-Stack Engineer</span>{" "}
+            currently looking for my next gig! I have 4+ years in the industry
+            developing web applications. Dedicated to transforming ideas into
+            elegant, efficient, and scalable solutions. My mission is to create
+            impactful well designed technology for the modern world.
           </p>
           <ul className="Button__List">
             {icons.map((icon, index) => {
@@ -74,9 +76,9 @@ const Header = () => {
               );
             })}
           </ul>
-          <button className="button-28" onClick={handleResume}>
+          {/* <button className="button-28" onClick={handleResume}>
             Resume
-          </button>
+          </button> */}
         </div>
       </section>
     </div>

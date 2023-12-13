@@ -9,14 +9,8 @@ import brunswick from "../brunswick.jpeg";
 import { FiMail } from "react-icons/fi";
 import { LuPhone } from "react-icons/lu";
 import { IoHomeOutline } from "react-icons/io5";
-import { FaReact, FaNodeJs, FaHtml5 } from "react-icons/fa";
-import { RiJavascriptLine } from "react-icons/ri";
-import { AiOutlineConsoleSql } from "react-icons/ai";
-import { TbBrandPython } from "react-icons/tb";
 import { MdOutlineSchool } from "react-icons/md";
-import { FaJava, FaCss3Alt } from "react-icons/fa6";
-import { SiAmazonaws } from "react-icons/si";
-import { TbBrandAzure } from "react-icons/tb";
+import { FaI } from "react-icons/fa6";
 
 import SkillsCard from "./SkillsCard";
 
@@ -32,7 +26,7 @@ const Resume = () => {
           <img src={logo} className="Avatar" />
         </div>
         <div className="Name__Container">
-          <p>Arnav Chevula</p>
+          <p style={{ fontSize: "xx-large" }}>Arnav Chevula</p>
           <p style={{ letterSpacing: "2px", color: "#3dfbff" }}>
             Software Engineer
           </p>
@@ -47,7 +41,7 @@ const Resume = () => {
             </p>
             <p className="Contact__Element">
               {" "}
-              <LuPhone className="CalendarIcon" /> 9085666415
+              <LuPhone className="CalendarIcon" /> +1(908)-566-6415
             </p>
             <p className="Contact__Element">
               {" "}
@@ -58,7 +52,7 @@ const Resume = () => {
             <p className="Card__Title">EDUCATION</p>
             <p className="Contact__Element">
               {" "}
-              <img src={uiuc} className={"RiskLens__Logo"} />
+              <img src={uiuc} className={"UIUC__Logo"} />
               University of Illinois at Urbana Champaign
             </p>
             <p className="Contact__Element">
@@ -78,9 +72,9 @@ const Resume = () => {
               Customer-focused engineer passionate about crafting scalable &
               intelligent user experiences while fostering an inclusive &
               collaborative culture.
-            </p>
+              {/* </p>
             <p>
-              {" "}
+              {" "} */}
               The opportunity to work on well designed customer focused web
               applications with social good in mind. Creating a feature rich and
               intelligent user experience from scratch and working cross
@@ -109,7 +103,7 @@ const Resume = () => {
 
               <div className="Experience__Right">
                 <span className="Position__Text">
-                  <BsBriefcase style={{ marginRight: "5px" }} />
+                  {/* <BsBriefcase style={{ marginRight: "5px" }} /> */}
                   Software Engineer II{" "}
                 </span>
                 {/* <span className="Company__Text">
@@ -153,7 +147,7 @@ const Resume = () => {
 
               <div className="Experience__Right">
                 <span className="Position__Text">
-                  <BsBriefcase style={{ marginRight: "5px" }} />
+                  {/* <BsBriefcase style={{ marginRight: "5px" }} /> */}
                   Software Engineer II{" "}
                 </span>
                 {/* <span className="Company__Text">
@@ -198,7 +192,7 @@ const Resume = () => {
 
               <div className="Experience__Right">
                 <span className="Position__Text">
-                  <BsBriefcase style={{ marginRight: "5px" }} />
+                  {/* <BsBriefcase style={{ marginRight: "5px" }} /> */}
                   Software Engineer{" "}
                 </span>
                 {/* <span className="Company__Text">
